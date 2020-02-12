@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:b="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
+    xmlns:local="clr-namespace:OurFirstPrismSample.ViewModel"
+    x:Class="OurFirstPrismSample.View.LoginPage"
+    Title="Login" >
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="80">
+            <Entry Text="{Binding UserName}"
+                   Placeholder="User"
+                   HorizontalOptions="FillAndExpand"/>
+            <Entry Text="{Binding Password}"
+                   Placeholder="Password"
+                   IsPassword="True"       
+                   HorizontalOptions="FillAndExpand">
+                    <Entry.Behaviors>
+                        <b:EventToCommandBehavior EventName="Completed"
+                                                  Command="{Binding OnLoginCommand}"/>
+                        <local:TextChangedBehavior/>
+                    </Entry.Behaviors>
+            </Entry>
+            <Button Command="{Binding OnLoginCommand}"
+                    Text="Login" TextColor="White"
+                    BackgroundColor="Black"
+                    HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

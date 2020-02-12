@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:OurFirstPrismSample.ViewModel"
+    xmlns:converters="clr-namespace:OurFirstPrismSample.Converters"
+    x:Class="OurFirstPrismSample.View.UserView"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="True"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <ContentPage.BindingContext>
+        <local:UserViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <converters:UserConverter x:Key="userConverter"/>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Label Text="Check Leap Year"
+                   x:Name="lblName" TextColor="Red" HorizontalOptions="CenterAndExpand"/>
+            <Label IsVisible="false"
+                   Text="{Binding User.Year,Converter={StaticResource userConverter}}"
+                   x:Name="lblBindingYear"/>
+            <Entry x:Name="entryYear"
+                   Placeholder="Enter year"/>
+            <Label Text="{Binding Source={x:Reference entryYear},
+                Path=Text, Converter={StaticResource userConverter},
+                ConverterParameter={x:Reference lblBindingYear}}"
+                   x:Name="lblYear" FontFamily="40"
+                   TextColor="Blue" HorizontalOptions="CenterAndExpand"/>
+            <Button x:Name="btnSpeak" Text="Speak"
+                    Command="{Binding ButtonSpeech_Clicked}"/>
+            <Entry x:Name="entrySpeak"
+                   Text="{Binding EntrySpeak}"
+                   Placeholder="Enter speak"/>
+
+            <Button Text="Send MessagingCenter"
+                    Command="{Binding CommandSendMessagingCenter}"
+                    x:Name="SendMessagingCenter"/>
+
+            
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

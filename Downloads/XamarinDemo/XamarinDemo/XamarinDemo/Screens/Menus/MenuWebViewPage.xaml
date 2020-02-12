@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<basescreen:BaseScreen
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XamarinDemo.Screens.Menus.MenuWebViewPage"
+    xmlns:basescreen="clr-namespace:XamarinDemo.Screens"
+    xmlns:const="clr-namespace:XamarinDemo.Constants"
+    Title="{Binding Title}">
+    <ContentPage.Content>
+        <Grid
+            Padding="{x:Static const:SizeConst.P5T20}"
+            Style="{x:StaticResource GridBaseStyle}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="{x:Static const:SizeConst.H40}"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="{x:Static const:SizeConst.W5}"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--1. WebView-->
+            <Button
+                Grid.Row="0"
+                Grid.Column="0"
+                Text="1. WebView Hybrid"
+                Style="{x:StaticResource ButtonBaseStyle}"
+                Command="{Binding ExecuteButtonMenu}"
+                CommandParameter="{x:Static const:PageConst.WEBVIEW_HYBRID_PAGE}"/>
+        </Grid>
+    </ContentPage.Content>
+</basescreen:BaseScreen>
