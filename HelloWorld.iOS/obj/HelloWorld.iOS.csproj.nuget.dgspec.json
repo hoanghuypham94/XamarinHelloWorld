@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/hoanghuy/Projects/HelloWorld/HelloWorld.iOS/HelloWorld.iOS.csproj": {}
+    "/Users/hoanghuy/XamarinHelloWorld/HelloWorld.iOS/HelloWorld.iOS.csproj": {}
   },
   "projects": {
-    "/Users/hoanghuy/Projects/HelloWorld/HelloWorld.iOS/HelloWorld.iOS.csproj": {
+    "/Users/hoanghuy/XamarinHelloWorld/HelloWorld.iOS/HelloWorld.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/hoanghuy/Projects/HelloWorld/HelloWorld.iOS/HelloWorld.iOS.csproj",
+        "projectUniqueName": "/Users/hoanghuy/XamarinHelloWorld/HelloWorld.iOS/HelloWorld.iOS.csproj",
         "projectName": "HelloWorld.iOS",
-        "projectPath": "/Users/hoanghuy/Projects/HelloWorld/HelloWorld.iOS/HelloWorld.iOS.csproj",
+        "projectPath": "/Users/hoanghuy/XamarinHelloWorld/HelloWorld.iOS/HelloWorld.iOS.csproj",
         "packagesPath": "/Users/hoanghuy/.nuget/packages/",
-        "outputPath": "/Users/hoanghuy/Projects/HelloWorld/HelloWorld.iOS/obj/",
+        "outputPath": "/Users/hoanghuy/XamarinHelloWorld/HelloWorld.iOS/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
@@ -26,8 +26,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "/Users/hoanghuy/Projects/HelloWorld/HelloWorld/HelloWorld.csproj": {
-                "projectPath": "/Users/hoanghuy/Projects/HelloWorld/HelloWorld/HelloWorld.csproj"
+              "/Users/hoanghuy/XamarinHelloWorld/HelloWorld/HelloWorld.csproj": {
+                "projectPath": "/Users/hoanghuy/XamarinHelloWorld/HelloWorld/HelloWorld.csproj"
               }
             }
           }
@@ -59,14 +59,14 @@
         }
       }
     },
-    "/Users/hoanghuy/Projects/HelloWorld/HelloWorld/HelloWorld.csproj": {
+    "/Users/hoanghuy/XamarinHelloWorld/HelloWorld/HelloWorld.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/hoanghuy/Projects/HelloWorld/HelloWorld/HelloWorld.csproj",
+        "projectUniqueName": "/Users/hoanghuy/XamarinHelloWorld/HelloWorld/HelloWorld.csproj",
         "projectName": "HelloWorld",
-        "projectPath": "/Users/hoanghuy/Projects/HelloWorld/HelloWorld/HelloWorld.csproj",
+        "projectPath": "/Users/hoanghuy/XamarinHelloWorld/HelloWorld/HelloWorld.csproj",
         "packagesPath": "/Users/hoanghuy/.nuget/packages/",
-        "outputPath": "/Users/hoanghuy/Projects/HelloWorld/HelloWorld/obj/",
+        "outputPath": "/Users/hoanghuy/XamarinHelloWorld/HelloWorld/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

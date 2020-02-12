@@ -1916,11 +1916,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/hoanghuy/Projects/HelloWorld/HelloWorld.Android/HelloWorld.Android.csproj",
+      "projectUniqueName": "/Users/hoanghuy/XamarinHelloWorld/HelloWorld.Android/HelloWorld.Android.csproj",
       "projectName": "HelloWorld.Android",
-      "projectPath": "/Users/hoanghuy/Projects/HelloWorld/HelloWorld.Android/HelloWorld.Android.csproj",
+      "projectPath": "/Users/hoanghuy/XamarinHelloWorld/HelloWorld.Android/HelloWorld.Android.csproj",
       "packagesPath": "/Users/hoanghuy/.nuget/packages/",
-      "outputPath": "/Users/hoanghuy/Projects/HelloWorld/HelloWorld.Android/obj/",
+      "outputPath": "/Users/hoanghuy/XamarinHelloWorld/HelloWorld.Android/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1935,8 +1935,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "/Users/hoanghuy/Projects/HelloWorld/HelloWorld/HelloWorld.csproj": {
-              "projectPath": "/Users/hoanghuy/Projects/HelloWorld/HelloWorld/HelloWorld.csproj"
+            "/Users/hoanghuy/XamarinHelloWorld/HelloWorld/HelloWorld.csproj": {
+              "projectPath": "/Users/hoanghuy/XamarinHelloWorld/HelloWorld/HelloWorld.csproj"
             }
           }
         }

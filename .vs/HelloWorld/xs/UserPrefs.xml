@@ -1,16 +1,19 @@
-﻿<Properties StartupConfiguration="{EC61A906-03C1-4436-96DE-906A4BD07DA8}|Default">
-  <MonoDevelop.Ide.ItemProperties.HelloWorld FirstBuild="True" />
-  <MonoDevelop.Ide.ItemProperties.HelloWorld.iOS FirstBuild="True" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="HelloWorld/MainPage.xaml">
+﻿<Properties StartupConfiguration="{1E21BE09-6643-41C0-BF91-7928933E09D2}|Default">
+  <MonoDevelop.Ide.ItemProperties.HelloWorld.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F02B72D5-7CBE-4C96-9F32-A63DBD4C1421" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HelloWorld.iOS/Info.plist">
     <Files>
       <File FileName="HelloWorld/MainPage.xaml.cs" Line="1" Column="1" />
       <File FileName="HelloWorld/MainPage.xaml" Line="1" Column="1" />
+      <File FileName="HelloWorld.iOS/Info.plist" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="HelloWorld" expanded="True">
             <Node name="HelloWorld" expanded="True" />
+            <Node name="HelloWorld.iOS" expanded="True">
+              <Node name="Info.plist" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
